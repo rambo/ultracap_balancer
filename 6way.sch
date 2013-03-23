@@ -2432,7 +2432,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="7.62" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PAIR_A+SM_1" class="2">
+<net name="PAIR_A+SM_1" class="0">
 <segment>
 <pinref part="RN1" gate="B" pin="1"/>
 <pinref part="RN1" gate="A" pin="1"/>
@@ -2721,7 +2721,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="-10.16" y1="30.48" x2="-2.54" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PAIR_A-SM_1" class="2">
+<net name="PAIR_A-SM_1" class="0">
 <segment>
 <pinref part="RN2" gate="A" pin="2"/>
 <pinref part="RN2" gate="B" pin="2"/>
@@ -2735,7 +2735,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <label x="-2.54" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PAIR_B-SM_1" class="2">
+<net name="PAIR_B-SM_1" class="0">
 <segment>
 <pinref part="RN3" gate="B" pin="2"/>
 <pinref part="RN3" gate="A" pin="2"/>
@@ -2749,7 +2749,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <label x="81.28" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PAIR_B+SM_1" class="2">
+<net name="PAIR_B+SM_1" class="0">
 <segment>
 <pinref part="RN4" gate="B" pin="2"/>
 <pinref part="RN4" gate="A" pin="2"/>
