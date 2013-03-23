@@ -2539,7 +2539,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </bus>
 </busses>
 <nets>
-<net name="+12V" class="2">
+<net name="+12V" class="1">
 <segment>
 <pinref part="CHG_V" gate="G$1" pin="2"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
@@ -2562,7 +2562,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <label x="375.92" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND" class="2">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-10.16" y1="-40.64" x2="-10.16" y2="-38.1" width="0.1524" layer="91"/>
