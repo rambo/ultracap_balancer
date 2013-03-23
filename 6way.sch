@@ -1193,6 +1193,7 @@ Source: RS Component / Phycomp</description>
 <part name="RN2" library="resistor-dil" deviceset="4R-N" device="CAY16"/>
 <part name="RN3" library="resistor-dil" deviceset="4R-N" device="CAY16"/>
 <part name="RN4" library="resistor-dil" deviceset="4R-N" device="CAY16"/>
+<part name="PAIR_B_1" library="pinhead" deviceset="PINHD-1X4" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1211,14 +1212,13 @@ Source: RS Component / Phycomp</description>
 <instance part="RN2" gate="A" x="10.16" y="81.28" rot="R90"/>
 <instance part="RN2" gate="B" x="15.24" y="81.28" rot="R90"/>
 <instance part="RN2" gate="D" x="22.86" y="63.5" rot="R90"/>
-<instance part="RN3" gate="A" x="71.12" y="71.12"/>
-<instance part="RN3" gate="B" x="71.12" y="66.04"/>
-<instance part="RN3" gate="C" x="71.12" y="60.96"/>
-<instance part="RN3" gate="D" x="71.12" y="55.88"/>
-<instance part="RN4" gate="A" x="104.14" y="71.12"/>
-<instance part="RN4" gate="B" x="104.14" y="66.04"/>
-<instance part="RN4" gate="C" x="104.14" y="60.96"/>
-<instance part="RN4" gate="D" x="104.14" y="55.88"/>
+<instance part="RN3" gate="A" x="81.28" y="83.82" rot="R90"/>
+<instance part="RN3" gate="B" x="86.36" y="83.82" rot="R90"/>
+<instance part="RN3" gate="D" x="76.2" y="66.04" rot="R90"/>
+<instance part="RN4" gate="A" x="91.44" y="83.82" rot="R90"/>
+<instance part="RN4" gate="B" x="96.52" y="83.82" rot="R90"/>
+<instance part="RN4" gate="D" x="101.6" y="71.12"/>
+<instance part="PAIR_B_1" gate="A" x="83.82" y="114.3" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1252,6 +1252,11 @@ Source: RS Component / Phycomp</description>
 <pinref part="RN1" gate="D" pin="1"/>
 <wire x1="-12.7" y1="68.58" x2="-17.78" y2="68.58" width="0.1524" layer="91"/>
 <label x="-22.86" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RN4" gate="D" pin="2"/>
+<wire x1="106.68" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+<label x="111.76" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PAIR_1_A_+" class="2">
@@ -1327,6 +1332,77 @@ Source: RS Component / Phycomp</description>
 <segment>
 <pinref part="PAIR_A_1" gate="A" pin="1"/>
 <wire x1="15.24" y1="114.3" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PAIR_B-_1" class="2">
+<segment>
+<pinref part="PAIR_B_1" gate="A" pin="2"/>
+<wire x1="81.28" y1="111.76" x2="81.28" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="PAIR_B_1" gate="A" pin="3"/>
+<wire x1="83.82" y1="111.76" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RN3" gate="B" pin="2"/>
+<pinref part="RN3" gate="A" pin="2"/>
+<wire x1="86.36" y1="88.9" x2="81.28" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="88.9" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
+<junction x="86.36" y="88.9"/>
+</segment>
+</net>
+<net name="PAIR_B_DISCHG_1" class="2">
+<segment>
+<pinref part="PAIR_B_1" gate="A" pin="4"/>
+<wire x1="86.36" y1="111.76" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PAIR_B+_1" class="2">
+<segment>
+<pinref part="PAIR_B_1" gate="A" pin="1"/>
+<wire x1="78.74" y1="111.76" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RN4" gate="B" pin="2"/>
+<pinref part="RN4" gate="A" pin="2"/>
+<wire x1="96.52" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="88.9" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<junction x="91.44" y="88.9"/>
+</segment>
+</net>
+<net name="PAIR_B_SENSE_1" class="0">
+<segment>
+<pinref part="PAIR_OPAMP_1" gate="G$2" pin="OUT"/>
+<wire x1="88.9" y1="55.88" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="RN3" gate="D" pin="1"/>
+<wire x1="88.9" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="55.88" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<junction x="88.9" y="55.88"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="RN3" gate="B" pin="1"/>
+<pinref part="RN3" gate="A" pin="1"/>
+<wire x1="86.36" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="RN3" gate="D" pin="2"/>
+<pinref part="PAIR_OPAMP_1" gate="G$2" pin="-IN"/>
+<wire x1="76.2" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="71.12" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
+<junction x="86.36" y="71.12"/>
+<junction x="86.36" y="78.74"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="RN4" gate="B" pin="1"/>
+<pinref part="RN4" gate="A" pin="1"/>
+<wire x1="96.52" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="PAIR_OPAMP_1" gate="G$2" pin="+IN"/>
+<wire x1="91.44" y1="71.12" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="D" pin="1"/>
+<wire x1="96.52" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
+<junction x="91.44" y="71.12"/>
+<junction x="91.44" y="78.74"/>
 </segment>
 </net>
 </nets>
