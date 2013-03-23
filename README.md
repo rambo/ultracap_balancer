@@ -1,4 +1,6 @@
-ultracap_balancer
-=================
+Series ultracap balancer
+========================
 
-Circuits to monitor and balance multiple ultracaps connected to series
+Circuits to monitor and balance multiple ultracaps connected to a series.
+
+
