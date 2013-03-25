@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -721,8 +721,14 @@ design rules under a new name.</description>
 <contactref element="FET" pad="4"/>
 <contactref element="JP2" pad="2"/>
 <contactref element="JP3" pad="2"/>
-<wire x1="24.13" y1="1.905" x2="21.13" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="3.935" x2="21.13" y2="5.08" width="0" layer="19" extent="1-1"/>
+<via x="20.955" y="4.953" extent="1-16" drill="0.3048" shape="square"/>
+<wire x1="24.13" y1="1.905" x2="24.13" y2="3.429" width="0.2032" layer="16"/>
+<wire x1="24.13" y1="3.429" x2="22.733" y2="4.826" width="0.2032" layer="16"/>
+<wire x1="22.733" y1="4.826" x2="21.082" y2="4.826" width="0.2032" layer="16"/>
+<wire x1="21.082" y1="4.826" x2="20.955" y2="4.953" width="0.2032" layer="16"/>
+<wire x1="21.13" y1="5.08" x2="21.082" y2="5.08" width="0.2032" layer="1"/>
+<wire x1="21.082" y1="5.08" x2="20.955" y2="4.953" width="0.2032" layer="1"/>
+<wire x1="5.08" y1="3.935" x2="20.955" y2="4.953" width="0" layer="19" extent="1-16"/>
 <wire x1="3.81" y1="1.905" x2="5.08" y2="3.935" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VB1">
@@ -804,7 +810,9 @@ design rules under a new name.</description>
 <contactref element="SJ3" pad="1"/>
 <contactref element="JP2" pad="4"/>
 <contactref element="CBOOT1" pad="1"/>
-<wire x1="9.21" y1="4.445" x2="24.892" y2="8.89" width="0" layer="19" extent="16-16"/>
+<wire x1="24.892" y1="8.89" x2="24.892" y2="8.128" width="0.2032" layer="16"/>
+<wire x1="24.892" y1="8.128" x2="19.05" y2="8.128" width="0.2032" layer="16"/>
+<wire x1="9.21" y1="4.445" x2="19.05" y2="8.128" width="0" layer="19" extent="16-16"/>
 <wire x1="8.89" y1="3.935" x2="9.21" y2="4.445" width="0" layer="19" extent="1-16"/>
 <wire x1="8.89" y1="1.905" x2="8.89" y2="3.935" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -813,7 +821,9 @@ design rules under a new name.</description>
 <contactref element="SJ4" pad="1"/>
 <contactref element="JP2" pad="1"/>
 <contactref element="CBOOT2" pad="1"/>
-<wire x1="4.13" y1="4.445" x2="24.892" y2="5.08" width="0" layer="19" extent="16-16"/>
+<wire x1="24.892" y1="5.08" x2="24.892" y2="7.112" width="0.2032" layer="16"/>
+<wire x1="24.892" y1="7.112" x2="19.05" y2="7.112" width="0.2032" layer="16"/>
+<wire x1="4.13" y1="4.445" x2="19.05" y2="7.112" width="0" layer="19" extent="16-16"/>
 <wire x1="3.81" y1="3.935" x2="4.13" y2="4.445" width="0" layer="19" extent="1-16"/>
 <wire x1="1.27" y1="1.905" x2="3.81" y2="3.935" width="0" layer="19" extent="1-1"/>
 </signal>
