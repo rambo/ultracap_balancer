@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="2.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -119,9 +119,9 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="15.875" y2="0" width="0" layer="20"/>
-<wire x1="15.875" y1="0" x2="15.875" y2="3.175" width="0" layer="20"/>
-<wire x1="15.875" y1="3.175" x2="19.685" y2="3.175" width="0" layer="20"/>
-<wire x1="19.685" y1="3.175" x2="19.685" y2="0" width="0" layer="20"/>
+<wire x1="15.875" y1="0" x2="15.875" y2="4.445" width="0" layer="20"/>
+<wire x1="15.875" y1="4.445" x2="19.685" y2="4.445" width="0" layer="20"/>
+<wire x1="19.685" y1="4.445" x2="19.685" y2="0" width="0" layer="20"/>
 <wire x1="19.685" y1="0" x2="28.555" y2="0" width="0" layer="20"/>
 <wire x1="28.555" y1="0" x2="28.555" y2="15.24" width="0" layer="20"/>
 <wire x1="28.555" y1="15.24" x2="19.685" y2="15.24" width="0" layer="20"/>
@@ -615,6 +615,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="20.32" y="10.795" size="1.27" layer="27"/>
 </element>
 <element name="CVDD1" library="microbuilder" package="0805" value="0.1uF 25V" x="13.462" y="8.128" smashed="yes"/>
+<element name="CVDD2" library="microbuilder" package="0805" value="0.1uF 25V" x="13.462" y="5.08" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND" class="2">
@@ -640,6 +641,10 @@ design rules under a new name.</description>
 <via x="12.7" y="8.509" extent="1-16" drill="0.3048" shape="square"/>
 <via x="8.001" y="12.7" extent="1-16" drill="0.3048" shape="octagon"/>
 <via x="7.747" y="8.382" extent="1-16" drill="0.3048" shape="octagon"/>
+<contactref element="CVDD2" pad="1"/>
+<via x="12.573" y="5.588" extent="1-16" drill="0.3048" shape="square"/>
+<via x="12.573" y="4.953" extent="1-16" drill="0.3048" shape="square"/>
+<via x="12.573" y="6.985" extent="1-16" drill="0.3048" shape="square"/>
 </signal>
 <signal name="VDD" class="2">
 <contactref element="GATEDRV" pad="1"/>
@@ -664,9 +669,6 @@ design rules under a new name.</description>
 <wire x1="9.271" y1="9.398" x2="8.636" y2="9.398" width="0.508" layer="16"/>
 <wire x1="4.191" y1="9.144" x2="4.13" y2="9.128" width="0.508" layer="16"/>
 <wire x1="9.271" y1="9.398" x2="9.21" y2="9.128" width="0.508" layer="16"/>
-<wire x1="14.605" y1="8.001" x2="16.129" y2="8.001" width="0.508" layer="1"/>
-<wire x1="16.129" y1="8.001" x2="16.187" y2="8.001" width="0.508" layer="1"/>
-<wire x1="14.605" y1="8.001" x2="14.412" y2="8.128" width="0.508" layer="1"/>
 <wire x1="14.605" y1="9.906" x2="16.129" y2="9.906" width="0.508" layer="1"/>
 <wire x1="16.129" y1="9.906" x2="16.187" y2="9.906" width="0.508" layer="1"/>
 <wire x1="14.605" y1="9.906" x2="14.412" y2="10.16" width="0.508" layer="1"/>
@@ -677,6 +679,20 @@ design rules under a new name.</description>
 <wire x1="11.811" y1="13.843" x2="11.811" y2="12.192" width="0.508" layer="16"/>
 <wire x1="10.287" y1="10.668" x2="10.16" y2="10.541" width="0.508" layer="16"/>
 <wire x1="11.811" y1="13.843" x2="11.811" y2="13.97" width="0.508" layer="16"/>
+<contactref element="CVDD2" pad="2"/>
+<wire x1="14.412" y1="8.128" x2="16.187" y2="8.128" width="0.508" layer="1"/>
+<wire x1="16.187" y1="8.128" x2="16.187" y2="8.001" width="0.508" layer="1"/>
+<wire x1="14.412" y1="8.128" x2="14.478" y2="8.128" width="0.508" layer="1"/>
+<wire x1="14.478" y1="8.128" x2="14.478" y2="6.7945" width="0.508" layer="1"/>
+<via x="14.478" y="6.7945" extent="1-16" drill="0.3048"/>
+<wire x1="14.478" y1="6.7945" x2="14.478" y2="5.715" width="0.508" layer="16"/>
+<via x="14.478" y="5.461" extent="1-16" drill="0.3048" shape="square"/>
+<via x="14.478" y="4.826" extent="1-16" drill="0.3048" shape="square"/>
+<wire x1="14.478" y1="5.461" x2="14.412" y2="5.461" width="0.508" layer="1"/>
+<wire x1="14.412" y1="5.461" x2="14.412" y2="5.08" width="0.508" layer="1"/>
+<wire x1="14.478" y1="4.826" x2="14.412" y2="4.826" width="0.508" layer="1"/>
+<wire x1="14.412" y1="4.826" x2="14.412" y2="5.08" width="0.508" layer="1"/>
+<wire x1="14.478" y1="5.715" x2="14.478" y2="5.461" width="0.508" layer="16"/>
 </signal>
 <signal name="S1" class="2">
 <contactref element="FET" pad="1"/>
@@ -758,8 +774,10 @@ design rules under a new name.</description>
 <wire x1="11.557" y1="1.651" x2="8.89" y2="4.318" width="0.1524" layer="1"/>
 <wire x1="11.557" y1="1.27" x2="11.557" y2="1.651" width="0.1524" layer="1"/>
 <wire x1="8.89" y1="4.318" x2="8.89" y2="4.443" width="0.1524" layer="1"/>
-<wire x1="15.621" y1="5.715" x2="11.557" y2="1.651" width="0.1524" layer="1"/>
-<wire x1="15.875" y1="5.969" x2="15.621" y2="5.715" width="0.1524" layer="16"/>
+<wire x1="13.335" y1="3.429" x2="11.557" y2="1.651" width="0.1524" layer="1"/>
+<wire x1="15.875" y1="5.969" x2="15.494" y2="4.826" width="0.1524" layer="16"/>
+<wire x1="15.494" y1="4.826" x2="14.097" y2="3.429" width="0.1524" layer="16"/>
+<wire x1="14.097" y1="3.429" x2="13.335" y2="3.429" width="0.1524" layer="16"/>
 <wire x1="18.415" y1="5.969" x2="15.875" y2="5.969" width="0.1524" layer="16"/>
 <wire x1="19.05" y1="6.604" x2="18.415" y2="5.969" width="0.1524" layer="1"/>
 <wire x1="19.05" y1="6.731" x2="19.05" y2="6.604" width="0.1524" layer="1"/>
@@ -767,7 +785,7 @@ design rules under a new name.</description>
 <wire x1="21.082" y1="7.62" x2="19.939" y2="7.62" width="0.1524" layer="1"/>
 <wire x1="11.557" y1="1.651" x2="11.557" y2="1.27" width="0.1524" layer="1"/>
 <wire x1="21.082" y1="7.62" x2="21.13" y2="7.62" width="0.1524" layer="1"/>
-<via x="15.621" y="5.715" extent="1-16" drill="0.3048"/>
+<via x="13.335" y="3.429" extent="1-16" drill="0.3048"/>
 <via x="18.415" y="5.969" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="HO2/G2">
@@ -784,9 +802,9 @@ design rules under a new name.</description>
 <wire x1="3.81" y1="4.318" x2="3.81" y2="4.443" width="0.1524" layer="1"/>
 <wire x1="4.953" y1="5.588" x2="3.81" y2="4.445" width="0.1524" layer="1"/>
 <wire x1="4.953" y1="5.715" x2="4.953" y2="5.588" width="0.1524" layer="1"/>
-<wire x1="5.588" y1="6.35" x2="4.953" y2="5.715" width="0.1524" layer="1"/>
-<wire x1="17.653" y1="6.35" x2="5.588" y2="6.35" width="0.1524" layer="1"/>
-<wire x1="17.653" y1="5.588" x2="17.653" y2="6.35" width="0.1524" layer="1"/>
+<wire x1="5.588" y1="6.223" x2="4.953" y2="5.715" width="0.1524" layer="1"/>
+<wire x1="17.653" y1="6.223" x2="5.588" y2="6.223" width="0.1524" layer="1"/>
+<wire x1="17.653" y1="5.588" x2="17.653" y2="6.223" width="0.1524" layer="1"/>
 <wire x1="18.161" y1="5.08" x2="17.653" y2="5.588" width="0.1524" layer="1"/>
 <wire x1="21.082" y1="5.08" x2="18.161" y2="5.08" width="0.1524" layer="1"/>
 <wire x1="3.81" y1="4.445" x2="3.81" y2="4.443" width="0.1524" layer="1"/>
@@ -940,6 +958,28 @@ design rules under a new name.</description>
 <via x="13.462" y="6.985" extent="1-16" drill="0.3048"/>
 </signal>
 </signals>
+<errors>
+<approved hash="3,16,83bfe5d5e48682ec"/>
+<approved hash="3,1,7aa54a4f48a37849"/>
+<approved hash="3,1,f225644f65a1f3cb"/>
+<approved hash="3,16,3c243e4e3f993df3"/>
+<approved hash="3,1,f3796513652ef344"/>
+<approved hash="3,16,3d783f123f163d7c"/>
+<approved hash="3,1,fb78951295eefb84"/>
+<approved hash="3,16,457827122716457c"/>
+<approved hash="3,16,1b97eb57eb861b46"/>
+<approved hash="3,1,fbf91593137dfd17"/>
+<approved hash="3,16,45f9a793a18543ef"/>
+<approved hash="3,16,1a72eab2ea701ab0"/>
+<approved hash="19,16,402450f5588aea96"/>
+<approved hash="19,16,c8bee252f7da271a"/>
+<approved hash="19,16,c057deb54c88a161"/>
+<approved hash="19,16,74228c3e50f37985"/>
+<approved hash="19,16,9639c5324a66e341"/>
+<approved hash="19,16,c566eeaf0edfddb6"/>
+<approved hash="19,16,9e8ff72af16b6bc5"/>
+<approved hash="19,16,cdb5dd35bb6a5b89"/>
+</errors>
 </board>
 </drawing>
 </eagle>

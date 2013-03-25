@@ -2664,6 +2664,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP3" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="CVDD1" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="0.1uF 25V"/>
+<part name="CVDD2" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="0.1uF 25V"/>
 </parts>
 <sheets>
 <sheet>
@@ -2712,6 +2713,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="NAME" x="53.34" y="0" size="1.27" layer="95" font="vector"/>
 <attribute name="VALUE" x="58.42" y="5.08" size="1.27" layer="96" font="vector" rot="R180"/>
 </instance>
+<instance part="CVDD2" gate="G$1" x="53.34" y="-7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="53.34" y="-10.16" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="58.42" y="-5.08" size="1.27" layer="96" font="vector" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2743,6 +2748,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="CVDD1" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="2.54" x2="60.96" y2="2.54" width="0.1524" layer="91"/>
 <label x="60.96" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CVDD2" gate="G$1" pin="P$1"/>
+<wire x1="58.42" y1="-7.62" x2="60.96" y2="-7.62" width="0.1524" layer="91"/>
+<label x="60.96" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDD" class="2">
@@ -2792,6 +2802,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="CVDD1" gate="G$1" pin="P$2"/>
 <wire x1="50.8" y1="2.54" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
 <label x="43.18" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CVDD2" gate="G$1" pin="P$2"/>
+<wire x1="50.8" y1="-7.62" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
+<label x="43.18" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S1" class="2">
