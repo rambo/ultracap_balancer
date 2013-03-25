@@ -2720,6 +2720,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="CVDD" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="12.7" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
+<label x="60.96" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="0" y1="48.26" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
@@ -2743,14 +2744,17 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="DBOOT1" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="50.8" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<label x="25.4" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="DBOOT2" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
+<label x="25.4" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CVDD" gate="G$1" pin="P$2"/>
 <wire x1="50.8" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
+<label x="43.18" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SJ2" gate="1" pin="1"/>
@@ -2891,6 +2895,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="50.8" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="DBOOT1" gate="G$1" pin="C"/>
 <wire x1="40.64" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<label x="40.64" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="0" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
@@ -2909,6 +2914,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="50.8" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="DBOOT2" gate="G$1" pin="C"/>
 <wire x1="40.64" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<label x="40.64" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="0" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
@@ -2978,6 +2984,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="CBOOT1" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
+<label x="60.96" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VS2" class="0">
@@ -2999,28 +3006,29 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="CBOOT2" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
+<label x="60.96" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="206,1,121.92,38.1,D1,,,,,"/>
+<approved hash="206,1,121.92,40.64,D1,,,,,"/>
+<approved hash="206,1,121.92,35.56,D2,,,,,"/>
+<approved hash="206,1,121.92,33.02,D2,,,,,"/>
 <approved hash="115,1,38.1,21.4969,DBOOT2,,,,,"/>
 <approved hash="115,1,38.1,51.9769,DBOOT1,,,,,"/>
-<approved hash="115,1,-0.237066,50.6688,JP1,,,,,"/>
-<approved hash="115,1,-0.237066,25.2688,JP2,,,,,"/>
-<approved hash="115,1,144.543,54.4788,JP3,,,,,"/>
-<approved hash="115,1,144.543,36.6988,JP4,,,,,"/>
-<approved hash="117,1,49.53,50.8,VB1,,,,,"/>
+<approved hash="115,1,-3.21733,53.5347,JP1,,,,,"/>
+<approved hash="115,1,-3.21733,28.1347,JP2,,,,,"/>
+<approved hash="115,1,141.563,57.3447,JP3,,,,,"/>
+<approved hash="115,1,141.563,39.5647,JP4,,,,,"/>
 <approved hash="117,1,74.93,43.18,VB1,,,,,"/>
-<approved hash="117,1,49.53,20.32,VB2,,,,,"/>
 <approved hash="117,1,74.93,33.02,VB2,,,,,"/>
+<approved hash="117,1,74.93,38.1,VS1,,,,,"/>
+<approved hash="117,1,74.93,27.94,VS2,,,,,"/>
 <approved hash="117,1,77.47,40.64,HO1/G1,,,,,"/>
 <approved hash="117,1,77.47,30.48,HO2/G2,,,,,"/>
-<approved hash="117,1,49.53,12.7,VDD,,,,,"/>
-<approved hash="117,1,33.02,20.32,VDD,,,,,"/>
-<approved hash="117,1,33.02,50.8,VDD,,,,,"/>
-<approved hash="117,1,59.69,12.7,GND,,,,,"/>
 </errors>
 </schematic>
 </drawing>
