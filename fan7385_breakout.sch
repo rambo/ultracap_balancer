@@ -1845,10 +1845,10 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </sheet>
 </sheets>
 <errors>
-<approved hash="206,1,121.92,38.1,D1/VS1,,,,,"/>
-<approved hash="206,1,121.92,40.64,D1/VS1,,,,,"/>
-<approved hash="206,1,121.92,35.56,D2/VS2,,,,,"/>
-<approved hash="206,1,121.92,33.02,D2/VS2,,,,,"/>
+<approved hash="206,1,121.92,38.1,D1,,,,,"/>
+<approved hash="206,1,121.92,40.64,D1,,,,,"/>
+<approved hash="206,1,121.92,35.56,D2,,,,,"/>
+<approved hash="206,1,121.92,33.02,D2,,,,,"/>
 <approved hash="115,1,38.1,21.4969,DBOOT2,,,,,"/>
 <approved hash="115,1,38.1,51.9769,DBOOT1,,,,,"/>
 <approved hash="115,1,-0.237066,50.6688,JP1,,,,,"/>
@@ -1859,8 +1859,10 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <approved hash="117,1,74.93,43.18,VB1,,,,,"/>
 <approved hash="117,1,49.53,20.32,VB2,,,,,"/>
 <approved hash="117,1,74.93,33.02,VB2,,,,,"/>
-<approved hash="117,1,59.69,50.8,D1/VS1,,,,,"/>
-<approved hash="117,1,59.69,20.32,D2/VS2,,,,,"/>
+<approved hash="117,1,59.69,50.8,VS1,,,,,"/>
+<approved hash="117,1,74.93,38.1,VS1,,,,,"/>
+<approved hash="117,1,59.69,20.32,VS2,,,,,"/>
+<approved hash="117,1,74.93,27.94,VS2,,,,,"/>
 <approved hash="117,1,77.47,40.64,HO1/G1,,,,,"/>
 <approved hash="117,1,77.47,30.48,HO2/G2,,,,,"/>
 <approved hash="117,1,49.53,12.7,VDD,,,,,"/>
