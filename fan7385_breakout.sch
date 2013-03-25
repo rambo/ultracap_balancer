@@ -1775,11 +1775,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="58.42" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="0" y1="20.32" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
-<label x="5.08" y="20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP3" gate="A" pin="3"/>
 <wire x1="144.78" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
 <label x="149.86" y="58.42" size="1.778" layer="95"/>
@@ -1804,11 +1799,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="58.42" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="4"/>
-<wire x1="0" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
-<label x="5.08" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="A" pin="3"/>
 <wire x1="144.78" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
 <label x="149.86" y="40.64" size="1.778" layer="95"/>
@@ -1829,6 +1819,11 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="101.6" y1="22.86" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
 <label x="93.98" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="A" pin="4"/>
+<wire x1="0" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
+<label x="5.08" y="27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VS2" class="0">
 <segment>
@@ -1839,6 +1834,11 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <pinref part="SJ4" gate="1" pin="1"/>
 <wire x1="101.6" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
 <label x="93.98" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="0" y1="20.32" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
+<label x="5.08" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
