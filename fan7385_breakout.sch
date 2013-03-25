@@ -1519,6 +1519,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="JP2" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="SJ3" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="SJ4" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
 </parts>
 <sheets>
 <sheet>
@@ -1557,6 +1559,12 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <instance part="JP2" gate="A" x="-2.54" y="27.94" rot="R180"/>
 <instance part="JP3" gate="A" x="142.24" y="55.88" rot="R180"/>
 <instance part="JP4" gate="A" x="142.24" y="38.1" rot="R180"/>
+<instance part="SJ3" gate="1" x="106.68" y="22.86" smashed="yes">
+<attribute name="NAME" x="104.14" y="25.4" size="1.778" layer="95"/>
+</instance>
+<instance part="SJ4" gate="1" x="106.68" y="15.24" smashed="yes">
+<attribute name="NAME" x="104.14" y="17.78" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1753,7 +1761,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <label x="5.08" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D2/VS2" class="2">
+<net name="D2" class="2">
 <segment>
 <pinref part="FET" gate="G$1" pin="D2@1"/>
 <pinref part="FET" gate="G$1" pin="D2@2"/>
@@ -1761,9 +1769,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="121.92" y1="33.02" x2="127" y2="33.02" width="0.1524" layer="91"/>
 <junction x="121.92" y="33.02"/>
 <label x="129.54" y="33.02" size="1.778" layer="95"/>
-<pinref part="GATEDRV" gate="G$1" pin="VS2"/>
-<wire x1="73.66" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="27.94" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CBOOT2" gate="G$1" pin="P$1"/>
@@ -1779,8 +1784,13 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="144.78" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
 <label x="149.86" y="58.42" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SJ4" gate="1" pin="2"/>
+<wire x1="111.76" y1="15.24" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
+<label x="114.3" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="D1/VS1" class="2">
+<net name="D1" class="2">
 <segment>
 <pinref part="FET" gate="G$1" pin="D1@1"/>
 <pinref part="FET" gate="G$1" pin="D1@2"/>
@@ -1788,11 +1798,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="121.92" y1="40.64" x2="127" y2="40.64" width="0.1524" layer="91"/>
 <junction x="121.92" y="40.64"/>
 <label x="129.54" y="40.64" size="1.778" layer="95"/>
-<wire x1="121.92" y1="40.64" x2="121.92" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="45.72" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="GATEDRV" gate="G$1" pin="VS1"/>
-<wire x1="78.74" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CBOOT1" gate="G$1" pin="P$1"/>
@@ -1807,6 +1812,33 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <pinref part="JP4" gate="A" pin="3"/>
 <wire x1="144.78" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
 <label x="149.86" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SJ3" gate="1" pin="2"/>
+<wire x1="111.76" y1="22.86" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
+<label x="114.3" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VS1" class="0">
+<segment>
+<pinref part="GATEDRV" gate="G$1" pin="VS1"/>
+<wire x1="76.2" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SJ3" gate="1" pin="1"/>
+<wire x1="101.6" y1="22.86" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
+<label x="93.98" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VS2" class="0">
+<segment>
+<pinref part="GATEDRV" gate="G$1" pin="VS2"/>
+<wire x1="73.66" y1="27.94" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SJ4" gate="1" pin="1"/>
+<wire x1="101.6" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
+<label x="93.98" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
