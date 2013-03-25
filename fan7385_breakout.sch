@@ -1561,7 +1561,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <busses>
 </busses>
 <nets>
-<net name="GND" class="1">
+<net name="GND" class="2">
 <segment>
 <pinref part="GATEDRV" gate="G$1" pin="GND"/>
 <wire x1="35.56" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
@@ -1582,7 +1582,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <label x="5.08" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VDD" class="2">
 <segment>
 <pinref part="GATEDRV" gate="G$1" pin="VDD"/>
 <wire x1="35.56" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
