@@ -137,6 +137,10 @@
 <text x="21.59" y="2.921" size="0.8128" layer="25" font="vector" ratio="11">S  G  D</text>
 <text x="22.606" y="9.906" size="0.8128" layer="25" font="vector" ratio="11">DMG9926</text>
 <text x="4.445" y="6.985" size="0.8128" layer="25" font="vector" ratio="11">FAN7385</text>
+<text x="26.924" y="10.795" size="1.778" layer="25">+</text>
+<text x="26.924" y="2.667" size="1.778" layer="25">+</text>
+<text x="20.066" y="2.413" size="1.778" layer="25">-</text>
+<text x="20.066" y="11.176" size="1.778" layer="25">-</text>
 </plain>
 <libraries>
 <library name="fan7385">
