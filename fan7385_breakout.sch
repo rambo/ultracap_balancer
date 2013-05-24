@@ -2827,6 +2827,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="JP4" gate="G$1" pin="1"/>
 <junction x="144.78" y="35.56"/>
 </segment>
+<segment>
+<pinref part="SJ3" gate="1" pin="2"/>
+<wire x1="111.76" y1="22.86" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
+<label x="114.3" y="22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="S2" class="2">
 <segment>
@@ -2845,6 +2850,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="149.86" y="53.34" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <junction x="144.78" y="53.34"/>
+</segment>
+<segment>
+<pinref part="SJ4" gate="1" pin="2"/>
+<wire x1="111.76" y1="15.24" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
+<label x="114.3" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN1" class="0">
@@ -2968,11 +2978,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="JP3" gate="G$1" pin="3"/>
 <junction x="144.78" y="58.42"/>
 </segment>
-<segment>
-<pinref part="SJ4" gate="1" pin="2"/>
-<wire x1="111.76" y1="15.24" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
-<label x="114.3" y="15.24" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="D1" class="2">
 <segment>
@@ -2988,11 +2993,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="149.86" y="40.64" size="1.778" layer="95"/>
 <pinref part="JP4" gate="G$1" pin="3"/>
 <junction x="144.78" y="40.64"/>
-</segment>
-<segment>
-<pinref part="SJ3" gate="1" pin="2"/>
-<wire x1="111.76" y1="22.86" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
-<label x="114.3" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VS1" class="0">

@@ -600,8 +600,8 @@ design rules under a new name.</description>
 </element>
 <element name="SJ1" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="16.637" y="8.001" smashed="yes"/>
 <element name="SJ2" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="16.637" y="9.906" smashed="yes"/>
-<element name="SJ3" library="SparkFun-Passives" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="25.4" y="8.89" smashed="yes" rot="MR180"/>
-<element name="SJ4" library="SparkFun-Passives" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="25.4" y="5.08" smashed="yes" rot="MR180"/>
+<element name="SJ3" library="SparkFun-Passives" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="23.622" y="9.525" smashed="yes" rot="MR90"/>
+<element name="SJ4" library="SparkFun-Passives" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="23.749" y="4.953" smashed="yes" rot="MR270"/>
 <element name="JP1" library="SparkFun-Connectors" package="1X06" value="" x="1.651" y="13.97" smashed="yes">
 <attribute name="VALUE" x="0.381" y="10.795" size="1.27" layer="27"/>
 </element>
@@ -721,6 +721,10 @@ design rules under a new name.</description>
 <wire x1="19.304" y1="9.906" x2="17.145" y2="9.906" width="0.508" layer="1"/>
 <wire x1="17.145" y1="9.906" x2="17.087" y2="9.906" width="0.508" layer="1"/>
 <wire x1="19.304" y1="9.906" x2="19.431" y2="9.906" width="0.508" layer="1"/>
+<contactref element="SJ3" pad="2"/>
+<wire x1="21.59" y1="9.525" x2="22.225" y2="9.525" width="0.254" layer="16"/>
+<wire x1="22.225" y1="9.525" x2="22.733" y2="10.033" width="0.254" layer="16"/>
+<wire x1="22.733" y1="10.033" x2="23.622" y2="10.033" width="0.254" layer="16"/>
 </signal>
 <signal name="S2" class="2">
 <contactref element="FET" pad="3"/>
@@ -758,6 +762,8 @@ design rules under a new name.</description>
 <via x="20.955" y="3.81" extent="1-16" drill="0.3048" shape="square"/>
 <via x="21.59" y="3.81" extent="1-16" drill="0.3048" shape="square"/>
 <via x="22.225" y="3.81" extent="1-16" drill="0.3048" shape="square"/>
+<contactref element="SJ4" pad="2"/>
+<wire x1="22.225" y1="4.445" x2="23.749" y2="4.445" width="0.254" layer="16"/>
 </signal>
 <signal name="IN1">
 <contactref element="GATEDRV" pad="3"/>
@@ -870,15 +876,12 @@ design rules under a new name.</description>
 <via x="27.305" y="5.715" extent="1-16" drill="0.3048" shape="square"/>
 <via x="27.305" y="6.35" extent="1-16" drill="0.3048" shape="square"/>
 <via x="27.305" y="5.08" extent="1-16" drill="0.3048" shape="square"/>
-<via x="26.67" y="5.08" extent="1-16" drill="0.3048" shape="square"/>
 <via x="26.67" y="5.715" extent="1-16" drill="0.3048" shape="square"/>
 <via x="27.94" y="5.715" extent="1-16" drill="0.3048" shape="square"/>
 <via x="27.94" y="5.08" extent="1-16" drill="0.3048" shape="square"/>
 <via x="27.94" y="6.35" extent="1-16" drill="0.3048" shape="square"/>
 <via x="26.67" y="6.35" extent="1-16" drill="0.3048" shape="square"/>
-<contactref element="SJ4" pad="2"/>
 <contactref element="JP3" pad="3"/>
-<wire x1="26.67" y1="5.08" x2="25.908" y2="5.08" width="0.2032" layer="16"/>
 </signal>
 <signal name="D1" class="2">
 <contactref element="FET" pad="8"/>
@@ -901,12 +904,9 @@ design rules under a new name.</description>
 <via x="26.67" y="8.255" extent="1-16" drill="0.3048" shape="square"/>
 <via x="26.67" y="7.62" extent="1-16" drill="0.3048" shape="square"/>
 <via x="27.305" y="7.62" extent="1-16" drill="0.3048" shape="square"/>
-<via x="26.67" y="8.89" extent="1-16" drill="0.3048" shape="square"/>
 <via x="27.305" y="8.89" extent="1-16" drill="0.3048" shape="square"/>
 <via x="27.94" y="8.89" extent="1-16" drill="0.3048" shape="square"/>
-<contactref element="SJ3" pad="2"/>
 <contactref element="JP4" pad="3"/>
-<wire x1="26.67" y1="8.89" x2="25.908" y2="8.89" width="0.2032" layer="16"/>
 </signal>
 <signal name="VS1">
 <contactref element="GATEDRV" pad="12"/>
@@ -914,8 +914,8 @@ design rules under a new name.</description>
 <contactref element="CBOOT1" pad="1"/>
 <contactref element="JP2" pad="4"/>
 <via x="7.62" y="4.318" extent="1-16" drill="0.3048" shape="square"/>
-<wire x1="24.892" y1="8.89" x2="24.13" y2="8.128" width="0.1524" layer="16"/>
-<wire x1="24.13" y1="8.128" x2="20.193" y2="8.128" width="0.1524" layer="16"/>
+<wire x1="23.622" y1="9.017" x2="23.622" y2="8.128" width="0.1524" layer="16"/>
+<wire x1="23.622" y1="8.128" x2="20.193" y2="8.128" width="0.1524" layer="16"/>
 <wire x1="7.62" y1="4.318" x2="7.62" y2="4.443" width="0.1524" layer="1"/>
 <wire x1="7.62" y1="4.953" x2="7.62" y2="4.318" width="0.1524" layer="16"/>
 <wire x1="7.874" y1="4.953" x2="7.62" y2="4.953" width="0.1524" layer="16"/>
@@ -940,8 +940,8 @@ design rules under a new name.</description>
 <contactref element="CBOOT2" pad="1"/>
 <contactref element="JP2" pad="1"/>
 <via x="2.54" y="4.318" extent="1-16" drill="0.3048" shape="square"/>
-<wire x1="24.892" y1="5.08" x2="24.892" y2="7.112" width="0.1524" layer="16"/>
-<wire x1="24.892" y1="7.112" x2="20.193" y2="7.112" width="0.1524" layer="16"/>
+<wire x1="23.749" y1="5.461" x2="23.749" y2="7.112" width="0.1524" layer="16"/>
+<wire x1="23.749" y1="7.112" x2="20.193" y2="7.112" width="0.1524" layer="16"/>
 <wire x1="2.54" y1="4.318" x2="2.54" y2="4.443" width="0.1524" layer="1"/>
 <wire x1="2.54" y1="4.953" x2="2.54" y2="4.318" width="0.1524" layer="16"/>
 <wire x1="2.794" y1="4.953" x2="2.54" y2="4.953" width="0.1524" layer="16"/>
@@ -964,32 +964,6 @@ design rules under a new name.</description>
 <via x="13.462" y="6.985" extent="1-16" drill="0.3048"/>
 </signal>
 </signals>
-<errors>
-<approved hash="3,16,83bfe5d5e48682ec"/>
-<approved hash="3,1,7aa54a4f48a37849"/>
-<approved hash="3,1,f225644f65a1f3cb"/>
-<approved hash="3,16,3c243e4e3f993df3"/>
-<approved hash="3,1,f3796513652ef344"/>
-<approved hash="3,16,3d783f123f163d7c"/>
-<approved hash="3,1,fb78951295eefb84"/>
-<approved hash="3,16,457827122716457c"/>
-<approved hash="3,16,1b97eb57eb861b46"/>
-<approved hash="3,1,fbf91593137dfd17"/>
-<approved hash="3,16,45f9a793a18543ef"/>
-<approved hash="3,16,1a72eab2ea701ab0"/>
-<approved hash="4,1,4835a14f2652b1cf"/>
-<approved hash="4,1,48534517b224b46f"/>
-<approved hash="4,16,4835a14f2652b1cf"/>
-<approved hash="4,16,48534517b224b46f"/>
-<approved hash="19,16,402450f5588aea96"/>
-<approved hash="19,16,c8bee252f7da271a"/>
-<approved hash="19,16,c057deb54c88a161"/>
-<approved hash="19,16,74228c3e50f37985"/>
-<approved hash="19,16,9639c5324a66e341"/>
-<approved hash="19,16,c566eeaf0edfddb6"/>
-<approved hash="19,16,9e8ff72af16b6bc5"/>
-<approved hash="19,16,cdb5dd35bb6a5b89"/>
-</errors>
 </board>
 </drawing>
 </eagle>
