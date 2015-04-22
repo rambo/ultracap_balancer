@@ -6121,10 +6121,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805K" value="10pF"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="M0805" value="100k"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
+<part name="OFF_PD" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="-2.54" y="0" size="1.778" layer="97">C1 is optional</text>
+<text x="17.78" y="0" size="1.778" layer="97">R2 can be 0R is slew-rate control is not needed.</text>
+<text x="17.78" y="-5.08" size="1.778" layer="97">OFF_PD can be omitted if you never let this pin float</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="48.26" y="27.94"/>
@@ -6136,6 +6140,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="C1" gate="G$1" x="2.54" y="10.16"/>
 <instance part="R1" gate="G$1" x="10.16" y="10.16" rot="R270"/>
 <instance part="R2" gate="G$1" x="17.78" y="10.16" rot="R270"/>
+<instance part="OFF_PD" gate="G$1" x="27.94" y="10.16" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6168,11 +6173,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="73.66" y1="50.8" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="50.8" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="5.08" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="5.08" x2="27.94" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="5.08" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="5.08" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="7.62" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
 <junction x="81.28" y="7.62"/>
 <label x="81.28" y="50.8" size="1.778" layer="95"/>
+<pinref part="OFF_PD" gate="G$1" pin="2"/>
+<junction x="27.94" y="5.08"/>
 </segment>
 </net>
 <net name="ONOFF" class="0">
@@ -6183,6 +6191,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="27.94" y1="20.32" x2="-2.54" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="20.32" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
 <label x="-2.54" y="30.48" size="1.778" layer="95"/>
+<pinref part="OFF_PD" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="15.24" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
+<junction x="27.94" y="20.32"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
