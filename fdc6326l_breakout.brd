@@ -64,6 +64,12 @@
 <wire x1="13.6325" y1="0" x2="13.6325" y2="8.2425" width="0" layer="20"/>
 <wire x1="13.6325" y1="8.2425" x2="0" y2="8.2425" width="0" layer="20"/>
 <wire x1="0" y1="8.2425" x2="0" y2="0" width="0" layer="20"/>
+<text x="6.35" y="0.3175" size="0.508" layer="25" font="vector">FDC6326 Breakout</text>
+<text x="3.175" y="6.985" size="1.016" layer="25" font="vector">VIN</text>
+<text x="6.985" y="6.985" size="1.016" layer="25" font="vector">VOUT</text>
+<text x="3.175" y="0.3175" size="1.016" layer="25" font="vector">GND</text>
+<text x="3.175" y="2.8575" size="1.016" layer="25" font="vector">ON</text>
+<text x="10.16" y="1.27" size="1.016" layer="25" font="vector">GND</text>
 </plain>
 <libraries>
 <library name="Fairchild_By_element14_Batch_1">
