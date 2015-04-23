@@ -6215,7 +6215,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="-5.08" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="C!_R1" class="0">
+<net name="C1_R1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="2"/>
