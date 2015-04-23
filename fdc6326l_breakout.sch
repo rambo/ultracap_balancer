@@ -6121,7 +6121,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
-<part name="OFF_PD" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="PD" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -6140,7 +6140,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="C1" gate="G$1" x="2.54" y="10.16"/>
 <instance part="R1" gate="G$1" x="10.16" y="10.16" rot="R270"/>
 <instance part="R2" gate="G$1" x="17.78" y="10.16" rot="R270"/>
-<instance part="OFF_PD" gate="G$1" x="27.94" y="10.16" rot="R270"/>
+<instance part="PD" gate="G$1" x="27.94" y="10.16" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6179,7 +6179,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="76.2" y1="7.62" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
 <junction x="81.28" y="7.62"/>
 <label x="81.28" y="50.8" size="1.778" layer="95"/>
-<pinref part="OFF_PD" gate="G$1" pin="2"/>
+<pinref part="PD" gate="G$1" pin="2"/>
 <junction x="27.94" y="5.08"/>
 </segment>
 </net>
@@ -6191,7 +6191,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="27.94" y1="20.32" x2="-2.54" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="20.32" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
 <label x="-2.54" y="30.48" size="1.778" layer="95"/>
-<pinref part="OFF_PD" gate="G$1" pin="1"/>
+<pinref part="PD" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="15.24" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
 <junction x="27.94" y="20.32"/>
 </segment>
